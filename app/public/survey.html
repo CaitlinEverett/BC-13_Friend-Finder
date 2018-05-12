@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder Pro</title>
+
+	<!-- Link to the jQuery Library -->
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  	<!-- Including Font Awesome Icons -->
+  	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+
+	<!-- Link to reset stylesheet -->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	<!-- Compiled and minified Materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--******************************************************************************-->
+	<!-- Header -->
+    <!--******************************************************************************-->
+	<header>
+			<nav>
+				<div class="nav-wrapper">
+					<div class="row"></div>
+						<a href="/" class="brand-logo" id="logo">Friend Finder</a>
+						<ul class="right hide-on-med-and-down" id="head-nav-links">
+							<li>
+								<a href="/survey">Survey</a>
+							</li>
+							<li>
+								<a href="/api/friends">API Friends List</a>
+							</li>
+							<li>
+								<a href="https://github.com/CaitlinEverett/BC-13_Friend-Finder">GitHub Repo</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+
+  	<!--******************************************************************************-->
+	<!-- Main -->
+    <!--******************************************************************************-->
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 z-depth-5 mainpanel">
+					<div id="mainpanel-content">
+						<h3>Survey Questions</h3>
+						<div class="divider"></div>
+
+						<!-- Survey Questions -->
+						<div class="question input-field col s12">
+							<h5>Question 1</h5>
+							<p>Peanut butter or jelly.</p>
+							<select id="question1">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 Natural Peanut Butter, You Fool</option>
+								<option value="2">2 I choose both.</option>
+								<option value="3">3 No berries with seeds. I have diverticulitis!</option>
+								<option value="4">4 Thanks for the choice. Go away.</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 2</h5>
+							<p>My favorite song today is.</p>
+							<select id="question2">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 Dear Prudence</option>
+								<option value="2">2 Box of Rain</option>
+								<option value="3">3 Knights in White Satin</option>
+								<option value="4">4 Ho Hum Bo Bum</option>
+								<option value="5">5 Row Row Row your Boat</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 3</h5>
+							<p>Color of your next car.</p>
+							<select id="question3">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 Barney Purple</option>
+								<option value="2">2 Tomato Green</option>
+								<option value="3">3 Sun</option>
+								<option value="4">4 Light Up Gold</option>
+								<option value="5">5 See Through</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 4</h5>
+							<p>When eating an orange, you ...</p>
+							<select id="question4">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 5</h5>
+							<p>Giraffes can be named: </p>
+							<select id="question5">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 Victoria</option>
+								<option value="2">2 Lemonhead</option>
+								<option value="3">3 Bartholameu</option>
+								<option value="4">4 Doctor Stripes</option>
+								<option value="5">5 Greg</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 6</h5>
+							<p>First pants leg you put on is ...</p>
+							<select id="question6">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 7</h5>
+							<p>When buying frozen dinners, I...</p>
+							<select id="question7">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 Shake the box to see if still frozen.</option>
+								<option value="2">2 Sniff-test the cardboard.</option>
+								<option value="3">3 Take the newest box fromt he bottom of the stack.</option>
+								<option value="4">4 Buy as many as possible at one time.</option>
+								<option value="5">5 Put them in the bottom of the grocery bag.</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 8</h5>
+							<p>Blankets</p>
+							<select id="question8">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">4 anorak</option>
+								<option value="2">4 anixamander</option>
+								<option value="3">4 parka</option>
+								<option value="4">4 polkadot</option>
+								<option value="5">4 wig</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 9</h5>
+							<p>Politically you believe this:</p>
+							<select id="question9">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 Handmaids Tale is the wave of the future</option>
+								<option value="2">2 The environment is not important</option>
+								<option value="3">3 We should all quit working and plant daisies</option>
+								<option value="4">4 We should all live forever</option>
+								<option value="5">5 Nobody is ever at fault for anything</option>
+							</select>
+						</div>
+
+						<div class="question input-field col s12">
+							<h5>Question 10</h5>
+							<p>Sometimes, when riding on the bus you look for...</p>
+							<select class="answerOptions" id="question10">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 Rats</option>
+								<option value="2">2 Sushi Restaurants</option>
+								<option value="3">3 Garbage Fires</option>
+								<option value="4">4 Rats</option>
+								<option value="5">5 Good times to tuck and roll</option>
+							</select>
+						</div>
+
+						<!-- Survey Submit Button -->
+						<div id="surveyFooter">
+							<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
+								<i class="material-icons right">send</i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	
+  	<!--******************************************************************************-->
+	<!-- FOOTER -->
+    <!--******************************************************************************-->
+	<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<p class="white-text">Friend Finder App</p>
+						<p class="grey-text text-lighten-4">Isn't life easier when there are other goofballs involved? Yes. The answer is yes.</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<p class="white-text">Links</p>
+						<ul>
+							<li>
+								<a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="https://github.com/CaitlinEverett/BC-13_Friend-Finder">GitHub Repo</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					NWBC Homework
+				</div>
+			</div>
+		</footer>
+
+	<!--******************************************************************************-->
+	<!-- FOOTER -->
+    <!--******************************************************************************-->
+	<div id="modal" class="modal">
+		<div class="modal-content">
+			<h4>Closest Friend Match</h4>
+			<div class="divider"></div>
+			<p id="userMatch"></p>
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+
+			$('.modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 300, // Transition in duration
+				outDuration: 200, // Transition out duration
+				startingTop: '4%', // Starting top style attribute
+				endingTop: '10%' // Ending top style attribute
+			});
+		});
+
+		// Activate submit button
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+
+			// Gather user inputs
+			var userInput = {
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					$('#question6').val().trim(),
+					$('#question7').val().trim(),
+					$('#question8').val().trim(),
+					$('#question9').val().trim(),
+					$('#question10').val().trim()
+				]
+			};
+
+			// console.log('userInput = ' + JSON.stringify(userInput));
+
+			// Add user inputs to friends list
+			$.post('/api/friends', userInput)
+      		.done(function(data) {
+      			// console.log('response = ' + JSON.stringify(data));
+
+      			// Set the name and image values of friend match
+      			$('#userMatch').html(data.name);
+		    	$("#userMatchImage").attr("src", data.pic);
+
+		    	// Pop open the modal dialog
+      			$('#modal').modal('open');
+      		});
+		});
+	</script>
+</body>
+</html>

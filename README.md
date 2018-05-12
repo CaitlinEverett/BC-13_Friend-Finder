@@ -1,7 +1,13 @@
-# friendfinder
+# FriendFinder Full Stack Application
+Everyone loves a good click-hole quiz! Enjoy!
 
-I am still behind.  I am trying to pick a more realistic catch-up date - and I am aiming at 3/24.  I have started work on this,and am caught up in class, conceptually - but just behind in the homework still.
 
-My goal is to be back at 100% before the next group project
+## History
+A class project for Northwestern Coding Bootcamp. 
 
-New notes - making sure this still works
+## Credits
+Author: Caitlin Everett
+Teachers: NWBC Folks!
+
+## Technology
+This node-based web application uses express, body-parser, path, handlebars, and heroku. The .gitignore file will keep these modules from downloading with the repo - so you must run npm install before starting the express server.  
